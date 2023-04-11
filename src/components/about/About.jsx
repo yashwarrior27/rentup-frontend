@@ -6,6 +6,8 @@ import "./about.css"
 
 const About = () => {
   return (
+
+    
     <>
       <section className='about'>
         <Back name='About Us' title='About Us - Who We Are?' cover={img} />
