@@ -19,6 +19,7 @@ export const nav = [
   //   text: "pricing",
   //   path: "/pricing",
   // },
+
   {
     text: "contact",
     path: "/contact",
@@ -27,29 +28,25 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Family House",
+    name: "Single Bed Hostel",
     total: "122 Property",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "House & Villa",
+    name: "Double Bed Hostel",
     total: "155 Property",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Apartment",
+    name: "AC Single Bed Hostel",
     total: "300 Property",
   },
   {
     cover: "../images/hero/h4.png",
-    name: "Office & Studio",
+    name: "AC Double Bed Hostel",
     total: "80 Property",
   },
-  {
-    cover: "../images/hero/h6.png",
-    name: "Villa & Condo",
-    total: "80 Property",
-  },
+  
 ]
 export const list = [
   {

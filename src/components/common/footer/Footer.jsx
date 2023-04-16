@@ -32,21 +32,12 @@ const Footer = () => {
             </div>
           </div>
 
-          {footer.map((val) => (
-            <div className='box'>
-              <h3>{val.title}</h3>
-              <ul>
-                {val.text.map((items) => (
-                  <li> {items.list} </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          
         </div>
       </footer>
-      <div className='legal'>
+      {/* <div className='legal'>
         <span>© 2021 RentUP. Designd By GorkCoder.</span>
-      </div>
+      </div> */}
     </>
   )
 }
