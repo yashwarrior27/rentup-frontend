@@ -1,7 +1,7 @@
 import React from "react"
 import { footer } from "../../data/Data"
 import "./footer.css"
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
 const Footer = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Footer = () => {
               <h1>Do You Have Questions ?</h1>
               <p>We'll help you to grow your career and growth.</p>
             </div>
-            <button className='btn5'>Contact Us Today</button>
+            <Link to="/contact"><button className='btn5'>Contact Us Today</button></Link>
           </div>
         </div>
       </section>

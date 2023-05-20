@@ -1,7 +1,7 @@
 import React from "react"
 import Heading from "../../common/Heading"
 import "./hero.css"
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
 const Hero = () => {
   return (
     <>
@@ -22,10 +22,11 @@ const Hero = () => {
               <span>Price Range</span>
               <input type='text' placeholder='Price Range' />
             </div>
-
-            <button className='btn1'>
+            <Link to='/blog'>
+            <button className='btn1' >
               <i className='fa fa-search'></i>
             </button>
+            </Link>
           </form>
         </div>
       </section>

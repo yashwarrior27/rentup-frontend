@@ -1,7 +1,18 @@
-import React from "react"
+import React,{useState,useEffect} from "react"
 import { featured } from "../../data/Data"
 
+
+
 const FeaturedCard = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.vidhaalay.com/public/api/get-category')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error:', error));
+  }, []);
+  console.log(data)
   return (
     <>
       <div className='content grid4 mtop'>
