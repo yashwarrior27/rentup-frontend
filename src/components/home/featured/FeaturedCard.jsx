@@ -13,6 +13,7 @@ const FeaturedCard = () => {
       .catch(error => console.error('Error:', error));
   }, []);
   console.log(data)
+
   return (
     <>
       <div className='content grid4 mtop'>
