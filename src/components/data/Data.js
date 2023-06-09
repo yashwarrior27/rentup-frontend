@@ -28,25 +28,46 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Single Bed Hostel",
-    total: "122 Property",
+    name: "Counselling",
+    total: "College selection,Course selection,Form filling",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "Double Bed Hostel",
-    total: "155 Property",
+    name: "Accommodation",
+    total: " verified accommodations,PGs,Flats,Hostels",
+
   },
   {
     cover: "../images/hero/h3.png",
-    name: "AC Single Bed Hostel",
-    total: "300 Property",
+    name: "Scholarships",
+    total: "coming soon",
+  },
+  {
+    cover: "../images/hero/h4.png",
+    name: "Entrance Coaching",
+    total: "Educational partnerships,  Personalized coaching",
+  },
+
+  {
+    cover: "../images/hero/h4.png",
+    name: "AC Double Bed Hostel",
+    total: "80 Property",
   },
   {
     cover: "../images/hero/h4.png",
     name: "AC Double Bed Hostel",
     total: "80 Property",
   },
-  
+  {
+    cover: "../images/hero/h4.png",
+    name: "AC Double Bed Hostel",
+    total: "80 Property",
+  },
+  {
+    cover: "../images/hero/h4.png",
+    name: "AC Double Bed Hostel",
+    total: "80 Property",
+  },
 ]
 export const list = [
   {

@@ -1,29 +1,71 @@
 import React,{useEffect,useState} from "react"
+import { useLocation } from 'react-router-dom';
 import { list } from "../../data/Data"
 import { Link } from "react-router-dom/cjs/react-router-dom.min"
 
 const  RecentCard = () => {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    fetch('https://api.vidhaalay.com/public/api/get-listing')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error('Error:', error));
-  }, []);
+  const [properties, setProperties] = useState([]);
+  const location = useLocation();
   
-  const res = data.data
-  const loading = data.success
-  console.log(loading)
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const loc = queryParams.get('location');
+    const propertyType = queryParams.get('propertyType');
+
+    // eslint-disable-next-line no-lone-blocks
+    
+    fetch('https://api.vidhaalay.com/public/api/get-listing')
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredProperties = data.data.filter((property) => {
+        // If no location or propertyType is specified, show all properties
+        if (!loc && !propertyType) {
+          return true;
+        }
+        // If a location is specified, match it; if not, ignore it
+        const matchLocation = loc ? property.address === loc : true;
+        // If a propertyType is specified, match it; if not, ignore it
+        const matchPropertyType = propertyType ? property.type === propertyType : true;
+
+        // A property is included if it matches both the location and the property type
+        return matchLocation && matchPropertyType;
+      });
+      setProperties(filteredProperties);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+}, [location.search]);
+  // const res = data.data
+  const loading = true
+  console.log(properties ?? [])
+  // data.success
+  
+  // const [properties, setProperties] = useState([]);
+  // const { location, propertyType } = new URLSearchParams(useLocation().search);
+
+  // useEffect(() => {
+  //   fetch('https://api.vidhaalay.com/public/api/get-listing')
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       const filteredProperties = data.data.filter(
+  //         (property) =>
+  //           property.address.includes(location) && property.type === propertyType
+  //       );
+  //       setProperties(filteredProperties);
+  //     });
+  // }, [location, propertyType]);
   return (
     <>
       <div className='content grid3 mtop'>
 
-        {loading===true && res.map((val, index) => {
+        {loading===true && properties.map((val, index) => {
           const { image,id, category, address, title, price, type } = val
           return (
             <>
-            <Link to='/single-blog'>
-            <div className='box shadow' key={index}>
+            
+            <div className='box shadow' key={id}>
+            <Link to={`/single-blog/${id}`}>
               <div className='img'>
                 <img src={'../images/list/p-1.png'} alt='../images/list/p-1.png' />
               </div>
@@ -43,8 +85,9 @@ const  RecentCard = () => {
                 </div>
                 <span>{type}</span>
               </div>
+              </Link>
             </div>
-            </Link>
+         
             </>
           )
         })}

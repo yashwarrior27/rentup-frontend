@@ -1,13 +1,49 @@
 .hero {
-  background-image: url("../../../../public/images/banner.png");
+  background-image: url("../../images/aa.jpg  ");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 90vh;
   width: 100%;
 }
+
+.hero .hero-content {
+
+  justify-content: space-between;
+  top: 0;
+}
+
+.hero .heading {
+  flex-basis: 40%;
+}
+
+.hero .form {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  /* Adjust as needed for spacing around the form */
+}
+
+.hero .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;  /* Adjust as needed for spacing between form fields */
+}
+
+.hero .form-field label {
+  /* Style for labels - adjust as needed */
+}
+
+.hero .form-field input,
+.hero .form-field select,
+.hero .form-field textarea {
+  
+}
+
 .hero .container {
-  padding-top: 15%;
+  padding-top: 5%;
 }
 .hero h1 {
   color: #fff;
@@ -17,36 +53,45 @@
   color: #fff;
   opacity: 0.8;
 }
-form {
-  background-color: #fff;
-  border-radius: 5px;
-  margin-top: 50px;
-  padding: 0 20px;
-}
-form input {
-  padding: 10px;
-  width: 100%;
-  border: 1px solid rgba(128, 128, 128, 0.2);
-  margin-top: 5px;
+.hero .form {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
   border-radius: 5px;
 }
-form span {
-  font-size: 14px;
-  color: grey;
+
+.hero .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;  
 }
-input::placeholder {
-  font-size: 17px;
-  color: black;
+
+.hero .form-field label {
+  color: #fff;  /* White color for labels */
 }
-form .box {
-  padding: 15px;
-  border-left: 1px solid rgba(128, 128, 128, 0.2);
+
+.hero .form-field input,
+.hero .form-field select,
+.hero .form-field textarea {
+  background-color: #222;  /* Dark color for input fields */
+  color: #fff;  /* White color for text */
+  border: 1px solid #555;  /* Darker border color */
 }
-form .box:nth-child(1) {
-  border-left: none;
+
+.hero .container {
+  padding-top: 5%;
 }
-form h4 {
-  font-weight: 500;
+
+.hero h1, .hero p, form {
+  color: #fff;  /* White color for text */
+}
+
+form input::placeholder {
+  color: #ccc;  /* Light grey color for placeholders */
 }
 @media screen and (max-width: 800px) {
   .hero .container {

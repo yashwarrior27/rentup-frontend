@@ -20,7 +20,7 @@ const Pages = () => {
           <Route exact path='/about' component={About} />
           <Route exact path='/services' component={Services} />
           <Route exact path='/blog' component={Blog} />
-          <Route exact path='/single-blog' component={SingleBlog} ></Route>
+          <Route exact path='/single-blog/:id' component={SingleBlog} ></Route>
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
         </Switch>

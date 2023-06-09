@@ -5,12 +5,16 @@ import "./contact.css"
 
 const Contact = () => {
   const [name, setName] = useState('');
-  const [submit, setSubmit] = useState('nsubmit');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleClick = () => {
+    setShowSuccessMessage(true);
+  };
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
     const response = await fetch('https://api.vidhaalay.com/public/api/add-contact', {
       method: 'POST',
@@ -48,12 +52,10 @@ const Contact = () => {
             </div>
             <input type="text" value={subject} onChange={e => setSubject(e.target.value)} placeholder="Subject" required />
             <textarea value={message} onChange={e => setMessage(e.target.value)} placeholder="Message" cols='30' rows='10'></textarea>
-            <button type="submit" onClick={setSubmit('submit')}>Submit Request</button>
+            <button type="submit" onClick={handleClick}>{showSuccessMessage ? <p>Success!</p>:<p>Submit Request</p>}</button>
             
           </form>
-          {submit === 'submit' && 
-            <>Success</> 
-          }
+          
         </div>
       </section>
     </>
