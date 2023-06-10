@@ -136,6 +136,15 @@ img {
   border: 5px solid #27ae601f;
   background: #fff;
 }
+.btn6 {
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fca311;
+  font-size: 20px;
+  font-weight: 400;
+  border: 5px solid #27ae601f;
+  background: #fff;
+}
 .back {
   height: 40vh;
   position: relative;

@@ -11,10 +11,10 @@ export const nav = [
     text: "services",
     path: "/services",
   },
-  {
-    text: "properties",
-    path: "/blog",
-  },
+  // {
+  //   text: "properties",
+  //   path: "/blog",
+  // },
   // {
   //   text: "pricing",
   //   path: "/pricing",
@@ -30,22 +30,25 @@ export const featured = [
     cover: "../images/hero/h1.png",
     name: "Counselling",
     total: "College selection,Course selection,Form filling",
+    link: "/counselling"
   },
   {
     cover: "../images/hero/h2.png",
     name: "Accommodation",
-    total: " verified accommodations,PGs,Flats,Hostels",
-
+    total: " verified accommodations",
+    link: "/counselling"
   },
   {
     cover: "../images/hero/h3.png",
     name: "Scholarships",
     total: "coming soon",
+    link: "/counselling"
   },
   {
     cover: "../images/hero/h4.png",
     name: "Entrance Coaching",
     total: "Educational partnerships,  Personalized coaching",
+    link: "/counselling"
   },
 
   {

@@ -2,6 +2,7 @@ import React from "react"
 import { footer } from "../../data/Data"
 import "./footer.css"
 import { Link } from "react-router-dom/cjs/react-router-dom.min"
+import { Instagram } from 'lucide-react'
 const Footer = () => {
   return (
     <>
@@ -24,7 +25,9 @@ const Footer = () => {
               <img src='../images/logoo.png' alt='' />
               <h2>Do You Need Help With Anything?</h2>
               <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
-
+              <div className="fl">
+          <Instagram size={24}/>
+          </div>
               <div className='input flex'>
                 <input type='text' placeholder='Email Address' />
                 <button className="btn5">Subscribe</button>

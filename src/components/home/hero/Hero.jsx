@@ -40,21 +40,22 @@ const Hero = () => {
               {/* <label className="text-sm font-medium px-2">Email</label> */}
               <input className="w-[320px] px-2 rounded-md" type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
             </div>
-            <div className='form-field'>
-              {/* <label className="text-sm font-medium px-2">Message</label> */}
-              <textarea className="w-[320px] h-[100px] px-2 rounded-md" placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)}/>
-            </div>
+            
             <div className='form-field'>
               {/* <label className="text-sm font-medium px-2">Property Type</label> */}
-              <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
+              <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)} className="w-[320px] form-field">
                 {/* add your options here */}
-                <option value="">Select a property type</option>
+                <option value="">Select Service</option>
                 <option value="type1">Type 1</option>
                 <option value="type2">Type 2</option>
                 // Add more options as needed
               </select>
             </div>
-            <button className='btn1' type="submit">
+            <div className='form-field'>
+              {/* <label className="text-sm font-medium px-2">Message</label> */}
+              <textarea className="w-[320px] h-[100px] px-2 rounded-md" placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)}/>
+            </div>
+            <button className='btn6' type="submit">
               <i className='fa fa-search'></i>
             </button>
           </form>

@@ -13,6 +13,7 @@ const Header = () => {
           <div className='logo top-0'>
             <img src='./images/logoo.png' alt='' className="-mt-1" />
           </div>
+          
           <div className='nav'>
             <ul className={navList ? "small" : "flex"}>
               {nav.map((list, index) => (

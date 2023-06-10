@@ -9,6 +9,7 @@ import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import SingleBlog from "../blog/SingleBlog"
+import { Counselling } from "../Counselling"
 
 const Pages = () => {
   return (
@@ -23,6 +24,7 @@ const Pages = () => {
           <Route exact path='/single-blog/:id' component={SingleBlog} ></Route>
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
+          <Route path='/counselling' component={Counselling} />
         </Switch>
         <Footer />
       </Router>
