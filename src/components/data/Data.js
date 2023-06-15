@@ -36,41 +36,43 @@ export const featured = [
     cover: "../images/hero/h2.png",
     name: "Accommodation",
     total: " verified accommodations",
-    link: "/counselling"
+    link: "/accommodations"
   },
   {
     cover: "../images/hero/h3.png",
     name: "Scholarships",
     total: "coming soon",
-    link: "/counselling"
+    link: "/scholarships"
   },
   {
     cover: "../images/hero/h4.png",
     name: "Entrance Coaching",
     total: "Educational partnerships,  Personalized coaching",
-    link: "/counselling"
+    link: "/coaching"
   },
 
   {
     cover: "../images/hero/h4.png",
-    name: "AC Double Bed Hostel",
-    total: "80 Property",
+    name: "Student Community",
+    total: "Peer connect, group chats,forums",
+    link: "/community"
   },
   {
     cover: "../images/hero/h4.png",
-    name: "AC Double Bed Hostel",
-    total: "80 Property",
+    name: "Gym",
+    total: "Gyms And fitness centers",
+    link: "/gym"
   },
-  {
-    cover: "../images/hero/h4.png",
-    name: "AC Double Bed Hostel",
-    total: "80 Property",
-  },
-  {
-    cover: "../images/hero/h4.png",
-    name: "AC Double Bed Hostel",
-    total: "80 Property",
-  },
+  // {
+  //   cover: "../images/hero/h4.png",
+  //   name: "AC Double Bed Hostel",
+  //   total: "80 Property",
+  // },
+  // {
+  //   cover: "../images/hero/h4.png",
+  //   name: "AC Double Bed Hostel",
+  //   total: "80 Property",
+  // },
 ]
 export const list = [
   {

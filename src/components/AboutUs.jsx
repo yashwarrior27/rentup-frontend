@@ -25,18 +25,19 @@ export const AboutUs = () => {
             <div>
             <ArrowBigRightDash size={60} className="text-gray-400" />
             </div>
+            
             <div className='flex flex-col items-center justify-center'>
-                <Users2 size={180} className=" text-[#14213d]"/>
-                <p className='text-[#fca311] text-sm font-semibold pt-2'>Connect with Alumni's</p>
+                <Home size={180} className=" text-[#14213d]"/>
+                <p className='text-[#fca311] text-sm font-semibold pt-2'>Verified accommodation</p>
             </div>
+
             <div>
             <ArrowBigRightDash size={60} className="text-gray-400" />
             </div>
             <div className='flex flex-col items-center justify-center'>
-                <Home size={180} className=" text-[#14213d]"/>
-                <p className='text-[#fca311] text-sm font-semibold pt-2'>Connect with Alumni's</p>
+                <Users2 size={180} className=" text-[#14213d]"/>
+                <p className='text-[#fca311] text-sm font-semibold pt-2'>Student Community</p>
             </div>
-
             </div>
         </div>
     </section>

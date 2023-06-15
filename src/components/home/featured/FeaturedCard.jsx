@@ -17,10 +17,10 @@ const   FeaturedCard = () => {
 
   return (
     <>
-      <div className='content grid grid-cols-4 gap-4 mtop'>
+      <div className='content grid md:grid-cols-4 gap-4 mtop justify-center place-content-center grid-cols-1'>
         {featured.map((items, index) => (
           
-          <div className='box col-span-1 flex flex-col items-center justify-center' key={index}>
+          <div className='box flex flex-col col-span-1 items-center justify-center' key={index}>
             <Link to={items.link}>
                  <img src={items.cover} alt='' className='w-16 h-16' />
       <h4 className='text-[#14213d] font-bold mt-2'>{items.name}</h4> {/* primary color text */}
